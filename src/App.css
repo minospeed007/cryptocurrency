@@ -1,0 +1,417 @@
+:root{
+  --text-primary:#000;
+  --bgPrimary:#fff;
+ --bgSecondary: #F9F9F9;
+ --pink: #0071bd;
+ --light-blue: #e6f7ff;
+ --border: #d9d9d9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media only screen and (min-width: 400px){
+  .coin-stats{
+
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+  }
+.card{
+  margin:2px;
+  width:175px;
+  margin-top: 3px;
+
+}
+.image{
+  max-height: 25px;
+  margin-top: 20px;
+}
+}
+.footer-main{
+  display:flex;
+  background-color: black;
+  height: 130px;
+  text-align: center;
+justify-content: center;
+  margin-top:50px;
+}
+.avatar-con{
+  float:left;
+  justify-content:center;
+  max-height :120px;
+align-items: center;
+}
+.avatar{
+  max-width:20px;
+  max-height: 20px;
+  margin-left:10px;
+}
+.provider-container{
+  justify-content: center;
+  align-items: center;
+}
+.moment{
+  font-size:7px;
+  margin-right:10px;
+  float: right;
+}
+.footer{
+  justify-content: center;
+  margin-top: 3%;
+}
+.footer a{
+  color :white;
+font-size:12px;
+}
+
+
+.top{
+  display:flex;
+  justify-content: center;
+  text-align: center;
+  margin-top:30px;
+  margin-bottom: 5px;
+}
+
+
+@media (max-width:600px) {
+  .stats-container {
+    display:flex;
+    flex-direction: column;
+  }
+.coin-details-heading{
+  text-align: center;
+}
+.coin-detail-heading{
+  text-align: center;
+}
+.coin-desc-link{
+  display:flex;
+  flex-direction: column;
+}
+.descript{font-size: 17px;}
+}
+
+.container {
+  background-color: #282c34;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  overflow: hidden;
+
+}
+
+.global{color: white;}
+.circular{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-top:5px;
+}
+.a-line{
+  padding:5px;
+  text-decoration: none;
+  color:black;
+}
+.line{
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.line-link{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  
+}
+
+p{
+  margin-left:10px;
+}
+a:hover {
+  color: var(--pink) !important;
+  text-decoration: none;
+}
+.navbar{
+  flex:0.2;
+  background-color: rgb(0, 21, 41);
+}
+.image-con{
+  display:flex;
+  max-width:350px;
+  justify-content: center;
+  align-items: center;
+}
+.chart-header{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    color: #0071bd;
+}
+.chart-title{
+    color: #0071bd !important;
+}
+.price-change{
+  font-weight: 900 !important;
+}
+.current-price{
+  margin-top: 0px !important;
+  font-weight: 900 !important;
+}
+.coin-detail-container{
+  margin: 30px;
+}
+
+.coin-heading-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-bottom: 1px solid var(--border);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  gap: 10px;
+}
+
+.coin-heading-container .coin-name{
+  font-weight: 900;
+  color: var(--pink);
+}
+
+.coin-heading-container p{
+  font-size: 1rem;
+  opacity: 0.9;
+  margin-bottom: 20px;
+}
+
+.stats-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.stats-container h2{
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin-top: 20px;
+  color: var(--pink);
+}
+
+.coin-details-heading{
+  font-weight: 700 !important;
+  margin-top: 20px !important;
+  color: var(--pink) !important;
+}
+
+.coin-stats{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border);
+  font-size: 1rem;
+  opacity: 0.9;
+  padding: 20px;
+
+}
+
+.coin-stats-name{
+  display: flex;
+  gap: 10px;
+  font-size: 1rem;
+}
+
+.stats{
+  font-weight: 800;
+}
+
+.coin-value-statistics-heading p{
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.coin-desc-link{
+  display: flex;
+  gap: 40px;
+  margin-top: 40px;
+  padding-top: 20px;
+}
+
+.coin-desc-link h2{
+  font-weight: 700;
+  color: var(--pink);
+}
+
+.coin-desc-link p{
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.coin-desc-link a{
+  color: var(--pink);
+}
+
+.coin-desc-link h3{
+  font-weight: 700;
+}
+
+.coin-desc{
+  flex: 0.5;
+}
+
+.coin-links{
+padding: 0px 20px;
+  flex: 0.5;
+}
+
+.coin-link{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border);
+  padding: 20px;
+}
+
+.link-name{
+  text-transform: capitalize;
+  font-size: 1rem;
+}
+.line8{
+display:flex;
+justify-content: center;
+align-items: center;
+}
+.line-div{
+  width:600px;
+  height:350px;
+}
+.icon-img{
+  max-width: 60px;
+  max-height: 50px;
+}
+.coin-link a{
+  color: var(--pink);
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.coin-link:hover, .coin-stats:hover{
+  background-color: var(--bgSecondary);
+}
+.crypto-div{
+  background-color: red;
+}
+.select-timeperiod{
+  background-color: red;
+  width:auto;
+}
+.select-div{
+  display:flex;
+  justify-content:center;
+  align-items: center;
+}
+.select-news{
+  width:180px;
+}
+.image{
+  max-height: 50px;
+  margin-top: 20px;
+}
+.news-card{
+  float:left;
+background-color: aqua;
+margin-bottom:.7rem;
+  width: 25%;
+
+
+}
+.news-card p{
+  color: black;
+    margin: 10px 0px !important;
+    font-size: .9rem;
+}
+.prop-link{
+  text-decoration: none;
+}
+.prop-link a:hover{
+  color: var(--pink) !important;
+
+}
+.main{
+  flex:0.8;
+  width: 100%;
+}
+.currency-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-news{
+  width:250px;
+  margin:2px;
+
+}
+.card{
+  margin:10px;
+  width:250px;
+  margin-top: 20px;
+}
+.more{
+  float:right;
+  margin-right: 112px;
+ margin-bottom:10px;
+ text-decoration: none;
+}
+.more-div{
+  margin-top:20px;
+  background-color: blue;
+}
+.more2{
+  float:right;
+  margin-right:113px;
+ text-decoration: none;
+
+}
+.content{
+background-color: red;}
+.total{
+  margin-top: 1px;
+  background-color: green;
+}
+.arrow-div{
+float:left;
+}
+.arrow{
+  color: red;
+  font-size: 12px !important;
+}
+.arrow-green{
+  color: green;
+  font-size: 12px !important;
+
+}
+.global{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.hr{
+  width:80%;
+  margin:0 auto;
+}
+.more2{
+  float:right;
+  margin-top: 5px;
+}
+.currency-news{
+  margin-top:5px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
