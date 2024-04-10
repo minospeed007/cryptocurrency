@@ -6,7 +6,7 @@ import { MoneyCollectOutlined, DollarCircleOutlined, FundOutlined, ExclamationCi
       from '@ant-design/icons';
 import {CircularProgress} from '@mui/material'
 import {useParams} from 'react-router-dom';
-import {useGetCryptodetailQuery,useGetCryptoHistoryQuery} from '../services/estateApi'
+import {useGetCryptodetailQuery,useGetCryptoHistoryQuery} from '../services/cryptoApi'
 import  millify from 'millify'
 import {Col,Row,Typography,Select} from 'antd';
 

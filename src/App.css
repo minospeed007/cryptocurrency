@@ -34,7 +34,7 @@
 .footer-main{
   display:flex;
   background-color: black;
-  height: 130px;
+  height: 25rem;
   text-align: center;
 justify-content: center;
   margin-top:50px;
@@ -50,6 +50,12 @@ align-items: center;
   max-height: 20px;
   margin-left:10px;
 }
+.search-crypto{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
 .provider-container{
   justify-content: center;
   align-items: center;
@@ -60,12 +66,14 @@ align-items: center;
   float: right;
 }
 .footer{
+  display:flex;
+  align-items: center;
+  flex-direction: column;
   justify-content: center;
-  margin-top: 3%;
 }
 .footer a{
   color :white;
-font-size:12px;
+font-size:1.3rem;
 }
 
 
@@ -299,7 +307,9 @@ align-items: center;
   font-weight: 700;
   font-size: 1rem;
 }
-
+.text{
+  font-size:1rem;
+}
 .coin-link:hover, .coin-stats:hover{
   background-color: var(--bgSecondary);
 }
@@ -351,15 +361,25 @@ margin-bottom:.7rem;
   justify-content: center;
   align-items: center;
 }
+.root{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
 .card-news{
-  width:250px;
-  margin:2px;
+  margin-top: 2rem;
+  width:20rem;
+  margin:1rem;
+  min-height: 15rem;
 
 }
 .card{
   margin:10px;
   width:250px;
   margin-top: 20px;
+}
+.title-news{
+  margin-top: 1rem;
 }
 .more{
   float:right;
@@ -410,8 +430,100 @@ float:left;
   margin-top: 5px;
 }
 .currency-news{
-  margin-top:5px;
-  display:flex;
-  align-items: center;
+  display: flex;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top:3rem;;
+}
+.green-text {
+  color: green;
+  font-weight: 1000;
+
+}
+
+.red-text {
+  color: red;
+  font-weight: 1000;
+}
+.p-text{
+  color:whitesmoke;
+}
+crypto-card{
+  background-color: yellow;
+  width:100%;
+}
+.crypto-card{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin:1.rem;
+  margin-right:3rem;
+
+}
+.crypto-desc{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:1.5rem;
+
+}
+.logo{
+  margin-left: 1rem;
+  color:whitesmoke;
+  font-size: 1.7rem;
+  font-weight: 600;
+  font-style: italic;
+}
+.nav-div{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2rem;
+  align-items: center;
+  background-color: #000;
+}
+.log__img{
+  width: 15rem;
+  height: 10rem;
+}
+.logo-img{
+  display:flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 15rem;
+}
+.nav-divs{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo > h3{
+  color: whitesmoke;
+  font-weight: 500;
+  margin-top: 2rem;
+}
+
+.nav-div > h2{
+  color: white;
+}
+
+@media screen and (max-width:900px) {
+ 
+  .logo{
+    margin-left: 1rem;
+  }
+.log__img{
+  width: 10rem;
+  height: 10rem;
+  margin-left:0.1rem;
+  border-radius: 50%;
+}
+
+.crypto-desc{
+  display: none;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
 }

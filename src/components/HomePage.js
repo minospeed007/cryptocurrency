@@ -4,13 +4,13 @@ import {CardMedia,CardContent,CardActions, CssBaseline,Card,Button, Grid,Input,
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import {Routes, Link , Route} from 'react-router-dom'
-import {useGetEstateQuery} from '../services/estateApi'
+import {useGetCryptoQuery} from '../services/cryptoApi'
 import millify from 'millify'
-import{Properties} from '../components'
+import{Cryptocurrencies} from '../components'
 import {CryptoNews} from '../components'
 // home page component
 const HomePage=()=>{
-  const {data, isFetching}= useGetEstateQuery(10)
+  const {data, isFetching}= useGetCryptoQuery(10)
   const globalStat= data?.data?.stats
   const num= globalStat?.totalMarketCap
     const prev= useRef(null)
@@ -73,7 +73,7 @@ prev.current= num
 
     </Grid>
     
-    <Properties simplified/>
+    <Cryptocurrencies simplified/>
     
     
 

@@ -4,23 +4,24 @@ import { getProperty } from './getApi';
 import {CardMedia,CardContent,CardActions, CssBaseline,Card,Button, Grid,Input,
     Typography, CircularProgress,Select,MenuItem,FormControl,InputLabel} from '@mui/material'
 import axios from 'axios'
-import {Navbar,HomePage, Properties, CryptoNews,Cryptodetail,Footer} from './components'
+import {Navbar,HomePage, Cryptocurrencies, CryptoNews,Cryptodetail,Footer} from './components'
 import './App.css'
 const App=()=> {
  return (<>
   <div className='app'>
+  <Navbar/>
 <div className="line">
-<div className="line-link">
-    <Link to='/' className="a-line">Home</Link>
-    <Link to='/CryptoNews'className="a-line">News</Link>
-    <Link to='/Properties'className="a-line">Cryptocurrencies</Link>
+<div className="nav-container">
+      <div className="line-link">
+        <Link to='/' className="a-line">Home</Link>
+        <Link to='/CryptoNews' className="a-line">News</Link>
+        <Link to='/cryptocurrencies' className="a-line">Cryptocurrencies</Link>
 
-
-    </div>
-  
+</div>
+</div>
    </div>
    <hr className="hr" />
-
+   
 <div className='main'>
   
     <div className='routes'>
@@ -30,7 +31,7 @@ const App=()=> {
 
         <Route exact path='/crypto/:coinId' element={<Cryptodetail/> }/>
 
-        <Route exact path='/properties' element={<Properties />}/>
+        <Route exact path='/cryptocurrencies' element={<Cryptocurrencies/>}/>
         
         
       </Routes>
