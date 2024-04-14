@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import HTMLReactParser from 'html-react-parser';
-import LineChart from './LineChart';
+import{LineChart} from '../components'
 import { MoneyCollectOutlined, DollarCircleOutlined, FundOutlined, ExclamationCircleOutlined,
      StopOutlined, TrophyOutlined, CheckOutlined, NumberOutlined, InfoOutlined }
       from '@ant-design/icons';
