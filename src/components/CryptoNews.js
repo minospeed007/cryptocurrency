@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Card, Grid, Typography, CircularProgress, CssBaseline } from '@mui/material';
 import moment from 'moment';
 import { useGetNewsQuery } from '../services/cryptoNewsApi';
-import { useGetCryptoQuery } from '../services/cryptoApi';
 
 const CryptoNews = ({ simplified }) => {
   const { data: newsList, isFetching } = useGetNewsQuery();

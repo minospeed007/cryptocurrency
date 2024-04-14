@@ -1,9 +1,9 @@
 import React, { useEffect,useRef}  from 'react'
-import {CardContent, CssBaseline,Card,Button, Grid,
-    Typography, CircularProgress} from '@mui/material'
+import {CardContent, CssBaseline, Grid,
+   Typography, CircularProgress} from '@mui/material'
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
-import {Routes, Link , Route} from 'react-router-dom'
+import { Link , } from 'react-router-dom'
 import {useGetCryptoQuery} from '../services/cryptoApi'
 import millify from 'millify'
 import{Cryptocurrencies} from '../components'

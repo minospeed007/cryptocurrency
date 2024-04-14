@@ -3,7 +3,7 @@ import {useGetCryptoQuery} from '../services/cryptoApi'
 import {Card, Grid,Input,
     Typography, CircularProgress} from '@mui/material'
 import millify from 'millify'
-import { Link , Route} from 'react-router-dom'
+import { Link } from 'react-router-dom'
  
 const Cryptocurrencies=({simplified})=>{
     const count = simplified ? 12 : 100
