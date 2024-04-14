@@ -1,5 +1,4 @@
-import  {useState , useEffect }  from 'react'
-import {Switch, Link ,Routes, Route} from 'react-router-dom'
+import { Link ,Routes, Route} from 'react-router-dom'
 
 import {Navbar,HomePage, Cryptocurrencies, CryptoNews,Cryptodetail,Footer} from './components'
 import './App.css'
