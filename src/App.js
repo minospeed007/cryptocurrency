@@ -1,9 +1,6 @@
 import  {useState , useEffect }  from 'react'
 import {Switch, Link ,Routes, Route} from 'react-router-dom'
-import { getProperty } from './getApi';
-import {CardMedia,CardContent,CardActions, CssBaseline,Card,Button, Grid,Input,
-    Typography, CircularProgress,Select,MenuItem,FormControl,InputLabel} from '@mui/material'
-import axios from 'axios'
+
 import {Navbar,HomePage, Cryptocurrencies, CryptoNews,Cryptodetail,Footer} from './components'
 import './App.css'
 const App=()=> {
@@ -43,7 +40,6 @@ const App=()=> {
 </div>
 
   </div>
-  <CssBaseline/>
  
     
  

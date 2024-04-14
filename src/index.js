@@ -1,23 +1,25 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import {render} from 'react-dom';
 import './index.css';
-import 'antd/dist/antd.min.css'
 
 import App from './App';
-import {BrowserRouter as Router} from 'react-router-dom'
+import {BrowserRouter as Router} from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
 import {Provider} from 'react-redux'
+import 'antd/dist/reset.css'
+
 import store from './app/store'
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
+const root = document.getElementById("root");
+render(
   <React.StrictMode>
     <Router>
       <Provider store={store}>
         <App />
       </Provider>
     </Router>
-  </React.StrictMode>
+  </React.StrictMode>,
+  root
 );
 
 

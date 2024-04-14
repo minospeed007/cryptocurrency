@@ -1,10 +1,9 @@
 import React,{useState,useEffect} from 'react'
 import {useGetCryptoQuery} from '../services/cryptoApi'
-import {CardMedia,CardContent, CssBaseline,Card, Grid,Input,
-    Typography, CircularProgress,Select,MenuItem,FormControl,InputLabel} from '@mui/material'
+import {Card, Grid,Input,
+    Typography, CircularProgress} from '@mui/material'
 import millify from 'millify'
-import {Routes, Link , Route} from 'react-router-dom'
-import{Container,Row,Col} from 'react-bootstrap';
+import { Link , Route} from 'react-router-dom'
  
 const Cryptocurrencies=({simplified})=>{
     const count = simplified ? 12 : 100
