@@ -31,6 +31,13 @@
   margin-top: 20px;
 }
 }
+.nav-container{
+  background-color: gold;
+display: flex;
+justify-content: center;
+align-items: center;  
+  height:4rem;
+}
 .footer-main{
   display:flex;
   background-color: black;
@@ -52,9 +59,11 @@ align-items: center;
 }
 .search-crypto{
   display:flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  margin-top: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  margin-left: 5rem;
 }
 .provider-container{
   justify-content: center;
@@ -126,6 +135,7 @@ font-size:1.3rem;
   padding:5px;
   text-decoration: none;
   color:black;
+  font-size: 1.4rem;
 }
 .line{
   margin-top: 10px;
@@ -133,7 +143,8 @@ font-size:1.3rem;
 }
 .line-link{
   display:flex;
-  justify-content: center;
+  width:22rem;
+  justify-content: space-between;
   align-items: center;
   margin-bottom: 10px;
   
@@ -317,7 +328,6 @@ align-items: center;
   background-color: red;
 }
 .select-timeperiod{
-  background-color: red;
   width:auto;
 }
 .select-div{
@@ -387,10 +397,7 @@ margin-bottom:.7rem;
  margin-bottom:10px;
  text-decoration: none;
 }
-.more-div{
-  margin-top:20px;
-  background-color: blue;
-}
+
 .more2{
   float:right;
   margin-right:113px;
@@ -434,7 +441,7 @@ float:left;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin-top:3rem;;
+  margin-top:4rem;
 }
 .green-text {
   color: green;
@@ -506,7 +513,16 @@ crypto-card{
 .nav-div > h2{
   color: white;
 }
-
+.top{
+  margin-bottom: 1rem;
+}
+.change-p{
+  color:black;
+  font-size: 1.2rem;
+}
+.news-line{
+  margin-bottom: 4rem;
+}
 @media screen and (max-width:900px) {
  
   .logo{

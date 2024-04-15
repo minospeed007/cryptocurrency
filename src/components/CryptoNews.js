@@ -20,7 +20,7 @@ const CryptoNews = ({ simplified }) => {
         <div className="top">
           <Typography variant="h6">Top Crypto News</Typography>
         </div>
-        <hr style={{ color: 'blue', height: '5px' }} />
+        <hr className='news-line'/>
         {isFetching ? (
           <div className='circular'><CircularProgress /></div>
         ) : (

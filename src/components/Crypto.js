@@ -18,8 +18,7 @@ const {coinId} = useParams()
 const [timeperiod, setTimeperiod] = useState('5y')
 const  {data,isFetching}= useGetCryptodetailQuery(coinId)
 const  {data:coinHistory}= useGetCryptoHistoryQuery({coinId,timeperiod})
-console.log(coinHistory)
-console.log(timeperiod)
+
 const cryptodetail= data?.data?.coin
 const cryptoHis= coinHistory?.data?.change
 const cryptoHist= coinHistory?.data?.history?.length

@@ -6,7 +6,7 @@ const App=()=> {
  return (<>
   <div className='app'>
   <Navbar/>
-<div className="line">
+<div className="lineg">
 <div className="nav-container">
       <div className="line-link">
         <Link to='/' className="a-line">Home</Link>
@@ -16,7 +16,6 @@ const App=()=> {
 </div>
 </div>
    </div>
-   <hr className="hr" />
    
 <div className='main'>
   

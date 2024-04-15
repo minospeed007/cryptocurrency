@@ -27,7 +27,9 @@ console.log(coinHistory?.data?.change)
       <Row className="chart-header">
         <Title level={2} className="chart-title">{coinName} Price Chart </Title>
         <Col className="price-container">
-          <Title level={5} className="price-change">Change: {cryptoHis}%</Title>
+        <Title level={5} className='current-price'>Change <span className={cryptoHis > 0 ? 'green-text' : 'red-text'}>
+          {cryptoHis}%</span></Title>
+
           <Title level={5} className="current-price">Current {coinName} Price: $ {currentPrice}</Title>
         </Col>
       </Row>
